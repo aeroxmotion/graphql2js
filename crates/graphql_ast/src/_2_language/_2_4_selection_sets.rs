@@ -1,6 +1,6 @@
-use crate::_2_5_fields::AstField;
-use crate::_2_8_2_inline_fragments::AstInlineFragment;
-use crate::_2_8_fragments::AstFragmentSpread;
+use super::_2_5_fields::AstField;
+use super::_2_8_fragments::AstFragmentSpread;
+use super::_2_8_fragments::_2_8_2_inline_fragments::AstInlineFragment;
 use crate::location::AstLocation;
 
 /// SelectionSet :

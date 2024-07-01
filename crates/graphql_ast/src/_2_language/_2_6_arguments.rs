@@ -1,5 +1,6 @@
-use super::location::AstLocation;
-use crate::{_2_1_8_names::AstName, _2_9_input_values::AstValue};
+use super::_2_1_8_names::AstName;
+use super::_2_9_input_values::AstValue;
+use crate::location::AstLocation;
 
 /// Arguments :
 ///   ( `Argument`+ )

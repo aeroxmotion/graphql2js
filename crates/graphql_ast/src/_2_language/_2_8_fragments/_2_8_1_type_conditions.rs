@@ -1,4 +1,4 @@
-use crate::_2_11_type_references::AstNamedType;
+use crate::_2_language::_2_11_type_references::AstNamedType;
 
 /// TypeCondition :
 ///   on `NamedType`

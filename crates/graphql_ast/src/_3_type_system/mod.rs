@@ -1,6 +1,10 @@
 use crate::location::AstLocation;
 
 pub mod _3_1_type_extensions;
+pub mod _3_2_descriptions;
+
+pub use _3_1_type_extensions::*;
+pub use _3_2_descriptions::*;
 
 /// TypeSystemDocument :
 ///   `TypeSystemDefinition`+

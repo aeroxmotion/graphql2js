@@ -1,4 +1,4 @@
-use crate::_2_1_8_names::AstName;
+use super::_2_1_8_names::AstName;
 
 /// Alias :
 ///   `Name` :
