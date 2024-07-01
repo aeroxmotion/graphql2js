@@ -1,3 +1,4 @@
+use crate::_2_12_directives::AstDirectives;
 use crate::_2_4_selection_sets::AstSelectionSet;
 use crate::_2_8_1_type_conditions::AstTypeCondition;
 use crate::location::AstLocation;

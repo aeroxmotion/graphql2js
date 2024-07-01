@@ -1,4 +1,6 @@
 use crate::_2_10_variables::AstVariablesDefinition;
+use crate::_2_12_directives::AstDirectives;
+use crate::_2_1_8_names::AstName;
 use crate::_2_4_selection_sets::AstSelectionSet;
 use crate::location::AstLocation;
 

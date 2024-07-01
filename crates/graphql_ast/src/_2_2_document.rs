@@ -1,5 +1,6 @@
 use crate::_2_3_operations::AstOperationDefinition;
 use crate::_2_8_fragments::AstFragmentDefinition;
+use crate::_3_1_type_extensions::AstTypeSystemDefinitionOrExtension;
 use crate::location::AstLocation;
 
 /// Document :

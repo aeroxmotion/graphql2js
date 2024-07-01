@@ -1,3 +1,5 @@
+use crate::_2_11_type_references::AstNamedType;
+
 /// TypeCondition :
 ///   on `NamedType`
 ///

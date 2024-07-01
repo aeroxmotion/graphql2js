@@ -1,3 +1,6 @@
+use crate::_2_11_type_references::AstType;
+use crate::_2_12_directives::AstDirectivesConst;
+use crate::_2_1_8_names::AstName;
 use crate::_2_9_input_values::AstValueConst;
 use crate::location::AstLocation;
 

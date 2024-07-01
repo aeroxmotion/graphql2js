@@ -1,3 +1,5 @@
+use crate::_2_12_directives::AstDirectives;
+use crate::_2_1_8_names::AstName;
 use crate::_2_4_selection_sets::AstSelectionSet;
 use crate::_2_6_arguments::AstArguments;
 use crate::_2_7_field_alias::AstAlias;
