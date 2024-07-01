@@ -1,3 +1,25 @@
+/// Letter :: one of
+///   A...Z a...z
+///
+/// Spec: https://spec.graphql.org/draft/#Letter
+#[macro_export]
+macro_rules! Letter {
+	() => {
+		'A'..='Z' | 'a'..='z'
+	};
+}
+
+/// Digit :: one of
+///   0...9
+///
+/// Spec: https://spec.graphql.org/draft/#Digit
+#[macro_export]
+macro_rules! Digit {
+	() => {
+		'0'..='9'
+	};
+}
+
 /// NameStart ::
 ///   `Letter`
 ///   _
@@ -20,27 +42,5 @@ macro_rules! NameStart {
 macro_rules! NameContinue {
 	() => {
 		Letter!() | Digit!() | '_'
-	};
-}
-
-/// Letter :: one of
-///   A...Z a...z
-///
-/// Spec: https://spec.graphql.org/draft/#Letter
-#[macro_export]
-macro_rules! Letter {
-	() => {
-		'A'..='Z' | 'a'..='z'
-	};
-}
-
-/// Digit :: one of
-///   0...9
-///
-/// Spec: https://spec.graphql.org/draft/#Digit
-#[macro_export]
-macro_rules! Digit {
-	() => {
-		'0'..='9'
 	};
 }

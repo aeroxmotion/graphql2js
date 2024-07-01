@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_1_8_names::AstName;
 use super::_2_6_arguments::AstArguments;
 use super::_2_6_arguments::AstArgumentsConst;
-use crate::location::AstLocation;
 
 /// Directives :
 ///   `Directive`+

@@ -1,5 +1,6 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_1_8_names::AstName;
-use crate::location::AstLocation;
 
 /// Type :
 ///   `NamedType`

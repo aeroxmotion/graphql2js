@@ -1,6 +1,7 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDescription;
 use crate::AstDirectivesConst;
-use crate::AstLocation;
 use crate::AstName;
 use crate::AstNamedType;
 

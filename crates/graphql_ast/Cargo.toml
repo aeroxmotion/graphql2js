@@ -4,4 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+graphql_common = { path = "../graphql_common" }
 graphql_token = { path = "../graphql_token" }

@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDescription;
 use crate::AstDirectivesConst;
 use crate::AstInputValueDefinition;
-use crate::AstLocation;
 use crate::AstName;
 
 pub mod _3_10_input_object_extensions;

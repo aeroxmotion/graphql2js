@@ -1,6 +1,7 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_1_8_names::AstName;
 use super::_2_9_input_values::AstValue;
-use crate::location::AstLocation;
 
 /// Arguments :
 ///   ( `Argument`+ )

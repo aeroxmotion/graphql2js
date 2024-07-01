@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_3_operations::AstOperationDefinition;
 use super::_2_8_fragments::AstFragmentDefinition;
 use crate::_3_type_system::AstTypeSystemDefinitionOrExtension;
-use crate::location::AstLocation;
 
 /// Document :
 ///   `Definition`+

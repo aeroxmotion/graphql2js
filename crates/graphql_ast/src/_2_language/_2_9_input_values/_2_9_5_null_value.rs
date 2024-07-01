@@ -1,4 +1,4 @@
-use crate::location::AstLocation;
+use graphql_common::location::AstLocation;
 
 /// NullValue :
 ///   null

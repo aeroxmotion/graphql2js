@@ -1,4 +1,4 @@
-use crate::location::AstLocation;
+use graphql_common::location::AstLocation;
 
 pub mod _3_10_input_objects;
 pub mod _3_13_directives;

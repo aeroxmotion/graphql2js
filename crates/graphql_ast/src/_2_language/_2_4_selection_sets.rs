@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_5_fields::AstField;
 use super::_2_8_fragments::AstFragmentSpread;
 use super::_2_8_fragments::_2_8_2_inline_fragments::AstInlineFragment;
-use crate::location::AstLocation;
 
 /// SelectionSet :
 ///   { `Selection`+ }

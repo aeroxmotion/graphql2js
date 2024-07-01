@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDescription;
 use crate::AstDirectivesConst;
 use crate::AstEnumValue;
-use crate::AstLocation;
 use crate::AstName;
 
 pub mod _3_9_1_enum_extensions;

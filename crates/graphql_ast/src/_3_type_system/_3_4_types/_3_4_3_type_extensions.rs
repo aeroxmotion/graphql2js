@@ -1,3 +1,10 @@
+use crate::AstEnumTypeExtension;
+use crate::AstInputObjectTypeExtension;
+use crate::AstInterfaceTypeExtension;
+use crate::AstObjectTypeExtension;
+use crate::AstScalarTypeExtension;
+use crate::AstUnionTypeExtension;
+
 /// TypeExtension :
 ///   `ScalarTypeExtension`
 ///   `ObjectTypeExtension`

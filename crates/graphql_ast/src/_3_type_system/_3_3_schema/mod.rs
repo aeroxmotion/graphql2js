@@ -1,3 +1,5 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDescription;
 use crate::AstDirectivesConst;
 use crate::AstNamedType;
@@ -21,6 +23,9 @@ pub struct AstSchemaDefinition {
 
 	/// `RootOperationTypeDefinition`+
 	pub definitions: Vec<AstRootOperationTypeDefinition>,
+
+	/// Node's location
+	pub location: AstLocation,
 }
 
 /// RootOperationTypeDefinition :

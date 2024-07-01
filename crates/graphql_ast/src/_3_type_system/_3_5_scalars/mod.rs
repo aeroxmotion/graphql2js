@@ -1,6 +1,7 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDescription;
 use crate::AstDirectivesConst;
-use crate::AstLocation;
 use crate::AstName;
 
 pub mod _3_5_6_scalar_extensions;
@@ -11,6 +12,7 @@ pub use _3_5_6_scalar_extensions::*;
 ///   `Description`? scalar `Name` `Directives[Const]`?
 ///
 /// Spec: https://spec.graphql.org/draft/#ScalarTypeDefinition
+#[derive(Clone, Debug)]
 pub struct AstScalarTypeDefinition {
 	/// `Description`?
 	pub description: Option<AstDescription>,

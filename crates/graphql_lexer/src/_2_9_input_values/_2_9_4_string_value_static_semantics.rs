@@ -1,7 +1,5 @@
-use std::assert_matches::assert_matches;
+use graphql_token::*;
 use std::collections::VecDeque;
-
-use crate::{white_space, BACKSLASH, DOUBLE_QUOTE, NEW_LINE};
 
 /// StringValue :: ""
 ///
@@ -45,9 +43,8 @@ pub(crate) fn static_semantic_possible_unicode_surrogate_pair(
 	// 3. If leadingValue is ≥ 0xD800 and ≤ 0xDBFF (a Leading Surrogate):
 	if matches!(leading_value, 0xD800..=0xDBFF) {
 		// a. Assert trailingValue is ≥ 0xDC00 and ≤ 0xDFFF (a Trailing Surrogate).
-		assert_matches!(
-			trailing_value,
-			0xDC00..=0xDFFF,
+		assert!(
+			matches!(trailing_value, 0xDC00..=0xDFFF),
 			"Invalid low-surrogate \\u{second_hex_digit_sequence}"
 		);
 
@@ -175,7 +172,7 @@ fn block_string_value(raw_value: String) -> String {
 		let mut indent = 0;
 
 		for char in chars_ {
-			if !matches!(char, white_space!()) {
+			if !matches!(char, WhiteSpace!()) {
 				break;
 			}
 
@@ -209,7 +206,7 @@ fn block_string_value(raw_value: String) -> String {
 	}
 
 	// 5. While the first item line in lines contains only `WhiteSpace`:
-	while !lines.is_empty() && lines[0].chars().all(|char| matches!(char, white_space!())) {
+	while !lines.is_empty() && lines[0].chars().all(|char| matches!(char, WhiteSpace!())) {
 		// a. Remove the first item from lines.
 		lines.pop_front();
 	}
@@ -218,7 +215,7 @@ fn block_string_value(raw_value: String) -> String {
 	while !lines.is_empty()
 		&& lines[lines.len() - 1]
 			.chars()
-			.all(|char| matches!(char, white_space!()))
+			.all(|char| matches!(char, WhiteSpace!()))
 	{
 		// a. Remove the last item from lines.
 		lines.pop_back();
@@ -260,5 +257,8 @@ fn into_unicode_scalar_value(hex_value: u32) -> char {
 
 /// Spec: https://www.unicode.org/glossary/#unicode_scalar_value
 fn assert_within_unicode_scalar_value_range(value: u32, debug_value: &str) {
-	assert_matches!(value, 0..=0xD7FF | 0xE000..=0x10FFFF, "Invalid unicode `\\u{debug_value}`")
+	assert!(
+		matches!(value, 0..=0xD7FF | 0xE000..=0x10FFFF),
+		"Invalid unicode `\\u{debug_value}`"
+	)
 }

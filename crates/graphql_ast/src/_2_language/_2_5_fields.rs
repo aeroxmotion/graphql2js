@@ -1,9 +1,10 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_12_directives::AstDirectives;
 use super::_2_1_8_names::AstName;
 use super::_2_4_selection_sets::AstSelectionSet;
 use super::_2_6_arguments::AstArguments;
 use super::_2_7_field_alias::AstAlias;
-use crate::location::AstLocation;
 
 /// Field :
 ///   `Alias`? `Name` `Arguments`? `Directives`? `SelectionSet`?

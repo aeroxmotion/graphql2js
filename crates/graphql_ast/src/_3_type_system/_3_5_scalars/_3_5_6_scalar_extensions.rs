@@ -1,5 +1,6 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDirectivesConst;
-use crate::AstLocation;
 
 /// ScalarTypeExtension :
 ///   extend scalar `Name` `Directives[Const]`

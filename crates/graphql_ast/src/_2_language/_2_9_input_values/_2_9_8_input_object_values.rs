@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::AstValue;
 use super::AstValueConst;
-use crate::_2_language::_2_1_8_names::AstName;
-use crate::location::AstLocation;
+use crate::AstName;
 
 /// ObjectValue :
 ///   { }

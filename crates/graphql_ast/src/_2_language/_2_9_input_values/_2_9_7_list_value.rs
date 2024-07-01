@@ -1,6 +1,7 @@
+use graphql_common::location::AstLocation;
+
 use super::AstValue;
 use super::AstValueConst;
-use crate::location::AstLocation;
 
 /// List :
 ///  [ ]

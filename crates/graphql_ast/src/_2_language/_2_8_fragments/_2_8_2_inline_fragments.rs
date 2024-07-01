@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::_2_8_1_type_conditions::AstTypeCondition;
 use crate::_2_language::_2_12_directives::AstDirectives;
 use crate::_2_language::_2_4_selection_sets::AstSelectionSet;
-use crate::location::AstLocation;
 
 /// InlineFragment :
 ///   ... `TypeCondition`? `Directives`? `SelectionSet`

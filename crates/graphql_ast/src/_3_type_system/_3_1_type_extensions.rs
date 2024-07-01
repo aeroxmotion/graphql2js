@@ -1,5 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use super::AstTypeSystemDefinition;
-use crate::location::AstLocation;
+use crate::AstSchemaExtension;
+use crate::AstTypeExtension;
 
 /// TypeSystemExtensionDocument :
 ///   `TypeSystemDefinitionOrExtension`+

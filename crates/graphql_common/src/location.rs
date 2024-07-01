@@ -1,5 +1,6 @@
+/// Token's location
 #[derive(Clone, Debug)]
-pub struct Location {
+pub struct TokenLocation {
 	/// Token index location
 	pub index: usize,
 
@@ -10,7 +11,7 @@ pub struct Location {
 	pub column: usize,
 }
 
-impl Location {
+impl TokenLocation {
 	pub fn new(index: usize, line: usize, column: usize) -> Self {
 		Self {
 			index,
@@ -18,4 +19,14 @@ impl Location {
 			column,
 		}
 	}
+}
+
+/// Node's location
+#[derive(Clone, Debug)]
+pub struct AstLocation {
+	/// Node's start location
+	pub start: TokenLocation,
+
+	/// Node's end location
+	pub end: TokenLocation,
 }

@@ -1,7 +1,8 @@
+use graphql_common::location::AstLocation;
+
 use crate::AstDirectivesConst;
 use crate::AstFieldsDefinition;
 use crate::AstImplementsInterfaces;
-use crate::AstLocation;
 use crate::AstName;
 
 /// ObjectTypeExtension :

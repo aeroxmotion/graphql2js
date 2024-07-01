@@ -1,4 +1,4 @@
-use crate::location::AstLocation;
+use graphql_common::location::AstLocation;
 
 use super::_2_11_type_references::AstType;
 use super::_2_12_directives::AstDirectivesConst;
