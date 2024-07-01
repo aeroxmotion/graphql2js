@@ -1,0 +1,8 @@
+[package]
+name = "graphql_parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+graphql_ast = { path = "../graphql_ast" }
+graphql_token = { path = "../graphql_token" }

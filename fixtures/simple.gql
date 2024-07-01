@@ -1,0 +1,20 @@
+directive @MyDirective(arg: String) on QUERY
+
+union MyUnion = SomeValue | AnotherValue
+
+interface MyInterface {
+	another_field: Float
+}
+
+interface MyOtherInterface {
+	other_field: [String]
+}
+
+"""
+Example block
+String
+"""
+type MyType implements MyInterface & MyOtherInterface {
+	"A field description"
+	my_field: Int!
+}
