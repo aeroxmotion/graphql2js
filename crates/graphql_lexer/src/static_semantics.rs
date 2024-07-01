@@ -45,7 +45,11 @@ pub(crate) fn static_semantic_possible_unicode_surrogate_pair(
 	// 3. If leadingValue is ≥ 0xD800 and ≤ 0xDBFF (a Leading Surrogate):
 	if matches!(leading_value, 0xD800..=0xDBFF) {
 		// a. Assert trailingValue is ≥ 0xDC00 and ≤ 0xDFFF (a Trailing Surrogate).
-		assert_matches!(trailing_value, 0xDC00..=0xDFFF);
+		assert_matches!(
+			trailing_value,
+			0xDC00..=0xDFFF,
+			"Invalid low-surrogate \\u{second_hex_digit_sequence}"
+		);
 
 		// b. Return (leadingValue - 0xD800) × 0x400 + (trailingValue - 0xDC00) + 0x10000.
 		into_unicode_scalar_value(

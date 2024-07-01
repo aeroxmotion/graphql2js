@@ -1,5 +1,7 @@
 use crate::location::AstLocation;
 
+pub mod _3_10_input_objects;
+pub mod _3_13_directives;
 pub mod _3_1_type_extensions;
 pub mod _3_2_descriptions;
 pub mod _3_3_schema;
@@ -8,7 +10,10 @@ pub mod _3_5_scalars;
 pub mod _3_6_objects;
 pub mod _3_7_interfaces;
 pub mod _3_8_unions;
+pub mod _3_9_enums;
 
+pub use _3_10_input_objects::*;
+pub use _3_13_directives::*;
 pub use _3_1_type_extensions::*;
 pub use _3_2_descriptions::*;
 pub use _3_3_schema::*;
@@ -17,6 +22,7 @@ pub use _3_5_scalars::*;
 pub use _3_6_objects::*;
 pub use _3_7_interfaces::*;
 pub use _3_8_unions::*;
+pub use _3_9_enums::*;
 
 /// TypeSystemDocument :
 ///   `TypeSystemDefinition`+
